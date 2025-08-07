@@ -10,11 +10,11 @@ function Footer() {
     <div className='flex flex-col p-6 gap-12 mb-5 text-sm sm:gap-32 sm:flex-row outfit'>
 
         <div className='flex flex-col gap-6 '><Image src={Logo} className='w-20 h-14' alt="" />
-      <p className='opacity-85'>KiddyLearno is a playful, safe online learning platform for kids in *Grades 1–8*. It focuses on core academic support, homework help, and test preparation in a fun, engaging way designed for young learners.</p></div>
+      <p className='opacity-85'>KiddyLearno is a playful, safe online learning platform for kids in *KS1 to KS3(Grade 1 to 8)*. It focuses on core academic support, homework help, and test preparation in a fun, engaging way designed for young learners.</p></div>
       
       <div className='flex flex-col gap-2 outfit [&>*]:opacity-90'> <h1 className='text-xl font-semibold'>COMPANY</h1> <Link href={''} className=''>Home</Link> <Link href={''} className=''>About us</Link><Link href={''} className=''>Tutoring Services</Link><Link href={''} className=''>Contact</Link></div>
-      <div className='flex flex-col outfit gap-2 [&>*]:opacity-90'> <h1 className='text-xl font-semibold'>GET IN TOUCH</h1><p className='outfit'>(415) 555-0132 (dummy) </p>
-      <span>@example@gmail.com</span>
+      <div className='flex flex-col outfit gap-2 [&>*]:opacity-90'> <h1 className='text-xl font-semibold'>GET IN TOUCH</h1><p className='outfit'>+92 3705100729 </p>
+      <span>kiddylearno@gmail.com</span>
       </div>
       
      

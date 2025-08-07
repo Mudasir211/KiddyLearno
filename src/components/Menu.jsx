@@ -2,8 +2,11 @@
 import React from 'react'
 import { useState } from 'react'
 import Link from 'next/link'
+import { useUser } from '@clerk/nextjs'
 
 function Menu() {
+     const { user, isSignedIn } = useUser()
+  console.log(user)
   const [isOpen, setIsOpen] = useState(false)
 
   return (

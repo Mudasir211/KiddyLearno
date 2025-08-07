@@ -1,25 +1,36 @@
 
 import Link from 'next/link'
 import { BadgeCheck,DollarSign, CalendarCheck, PiggyBank, Sparkles } from 'lucide-react'
+import Banner from '../../assets/Banner-pricing.png'
+import Image from 'next/image'
 
 export default function PricingPage() {
   return (
-    <main className="bg-gradient-to-br from-yellow-50 to-sky-50 py-20 px-6">
-      <section className="max-w-5xl mx-auto text-center mb-16">
-        <h1 className="text-3xl md:text-5xl font-extrabold text-orange-500 mb-4">Flexible & Affordable Tutoring Plans</h1>
-        <p className="text-lg text-sky-700">
+    <main className="bg-sky-50 pb-8  ">
+                <h1 className="text-2xl px-2 text-center py-12 bg-[#358cea] md:text-3xl font-extrabold text-white ">Flexible & Affordable Tutoring Plans</h1>
+<div className='lg:flex bg-[#feac3f] justify-center'><Image
+           
+            src={Banner} // Save the image here
+            alt="Kids studying cartoon"
+            
+            className="lg:h-[35rem]"
+            priority
+          /></div>
+      <section className=" bg-[#f7a03cea] px-6 py-10 text-center mb-16">
+
+        <p className="text-lg font-semibold text-white">
           Choose a plan that suits your child's schedule and goals. All sessions are live, 1-on-1, and guided by expert tutors.
         </p>
       </section>
 
-      <section className="max-w-6xl mx-auto grid md:grid-cols-3 gap-10 text-center">
+      <section className="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-10 text-center">
         {/* Standard Plan */}
         <div className="bg-white rounded-3xl shadow-lg p-8 border-2 border-orange-200 hover:border-orange-400 transition">
           <h2 className="text-2xl font-bold text-orange-600 mb-2 flex justify-center items-center gap-2">
             <CalendarCheck className="w-6 h-6" />
             Standard Plan
           </h2>
-          <p className="text-sky-600 mb-4">(12 sessions / month, 4 days a week)</p>
+          <p className="text-sky-600 mb-4">(12 sessions / month, 3 days a week)</p>
           <p className="text-3xl flex items-center justify-center font-extrabold text-sky-800 mb-2"><DollarSign className='w-8 h-8'/>80–120 <span className="text-base font-medium">/month</span></p>
           <p className="text-sm text-gray-500 mb-6">Price depends on course complexity & skill level</p>
           <ul className="text-left space-y-3 text-sky-700 font-medium mb-6">
@@ -30,7 +41,7 @@ export default function PricingPage() {
         </div>
 
         {/* Extended Plan */}
-        <div className="bg-white rounded-3xl shadow-lg p-8 border-2 border-sky-200 hover:border-sky-400 transition scale-105 md:scale-100">
+        <div className="bg-white rounded-3xl shadow-lg p-8 border-2 mx-2 border-sky-200 hover:border-sky-400 transition scale-105 md:scale-100">
           <h2 className="text-2xl font-bold text-sky-600 mb-2 flex justify-center items-center gap-2">
             <Sparkles className="w-6 h-6" />
             Extended Plan

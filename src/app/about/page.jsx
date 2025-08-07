@@ -1,16 +1,27 @@
 import Image from "next/image";
-import Banner from '../../assets/About-Banner.png'
+import Banner1 from '../../assets/About-Banner.png'
+import Banner2 from '../../assets/About-Banner-desktop.png'
+
 import ContactOptions from "@/components/ContactOptions";
+import SubjectsGrid from "@/components/SubjectsGrid";
+import ProgressAndEvaluation from "@/components/ProgressAndEvaluation";
 export default function AboutPage() {
   return (
-    <main className="bg-white text-sky-800">
-       <section className="px-4 flex flex-col gap-8 py-10 relative bg-[#c5f1ff]"><button className="bg-orange-500 text-white px-5 font-thin flex justify-center items-center py-1.5 text-[10px] top-48 absolute rounded-2xl">Get Started</button> <Image alt="" src={Banner}/><div className="bg-gradient-to-br rounded-2xl from-sky-50 to-yellow-50 py-10 text-center px-6">
+    <main className="bg-white flex gap-5 flex-col text-sky-800">
+       <section className="px-4 flex flex-col gap-8 sm:py-0 py-10 relative bg-[#c5f1ff]"><button className="bg-orange-500 text-white px-5 font-thin hidden justify-center items-center py-1.5 text-[10px] top-48 absolute rounded-2xl">Get Started</button> <Image className="md:hidden" alt="" src={Banner1}/>
+      <div className="hidden relative md:block"> <div className="absolute md:py-16 md:px-6 space-y-6 p-30 py-40 left-0"> <h1 className="text-3xl md:text-5xl font-extrabold mb-4 text-sky-700">
+            Kiddy<span className="text-orange-500">Learno</span>
+          </h1>
+          
+          <h2 className="font-bold text-2xl">Engaging Online Tutoring For <p className="text-3xl">Grades 1 to 8</p></h2><p>helping kids learn and grow with joy</p>
+          </div> <Image alt="" src={Banner2}/></div>
+       <div className="bg-gradient-to-br rounded-2xl from-sky-50 to-yellow-50 py-10 text-center px-6">
         <div className="max-w-3xl mx-auto">
           <h1 className="text-3xl md:text-5xl font-extrabold mb-8 text-sky-700">
             About <br /><span className="text-orange-500">KiddyLearno</span>
           </h1>
           <p className="text-lg md:text-xl text-sky-600 max-w-2xl mx-auto">
-            Empowering young minds with joyful, personalized, and effective online tutoring for Grades 1 to 8.
+            Empowering young minds with joyful, personalized, and effective online tutoring for KS1 to KS3(Grade 1 to 8).
           </p>
         </div>
       </div>
@@ -22,7 +33,7 @@ export default function AboutPage() {
         <div>
           <h2 className="text-2xl font-bold text-orange-500 mb-3">🎯 Our Mission</h2>
           <p className="text-sky-700">
-            At KiddyLearno, our mission is to make learning accessible, affordable, and fun for every child.
+            At <span className="text-2xl font-bold"><span className="text-orange-500">K</span>L</span>, our mission is to make learning accessible, affordable, and fun for every child.
             We help students build strong academic foundations while nurturing creativity, confidence, and curiosity.
           </p>
         </div>
@@ -40,8 +51,8 @@ export default function AboutPage() {
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-extrabold mb-6">Why We’re Different</h2>
           <p className="text-sky-600 mb-10 max-w-3xl mx-auto">
-            Most tutoring platforms take a one-size-fits-all approach. We don’t.
-            KiddyLearno is crafted specifically for children in Grades 1–8.
+            Most tutoring platforms take a one-size-fits-all approach. We don’t. 
+            <span className="text-2xl font-bold"><span className="text-orange-500" > K</span>L</span> is crafted specifically for children in KS1 to KS3(Grade 1 to 8).
             Every lesson is tailored, every tutor is child-focused, and every experience is designed to make your child feel supported, understood, and excited to learn.
           </p>
 
@@ -61,6 +72,7 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+<ProgressAndEvaluation/>
 
       {/* Teaching Philosophy */}
       <section className="py-20 px-6 max-w-5xl mx-auto">

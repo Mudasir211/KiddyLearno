@@ -19,21 +19,21 @@ export default function ContactOptions() {
             className="flex items-center gap-3 text-sky-700 hover:text-sky-900 transition font-medium"
           >
             <Mail className="w-5 h-5 text-sky-500" />
-            hello@example.com
+            kiddylearno@gmail.com
           </a>
 
           {/* Phone */}
           <a
-            href="tel:+123456789"
+            href="tel:+92 3705100729"
             className="flex items-center gap-3 text-sky-700 hover:text-sky-900 transition font-medium"
           >
             <Phone className="w-5 h-5 text-sky-500" />
-            +1 234 567 89
+            +92 3705100729
           </a>
 
           {/* WhatsApp */}
           <a
-            href="https://wa.me/123456789" // Replace with your actual WhatsApp number
+            href="https://wa.me/+923705100729" // Replace with your actual WhatsApp number
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-5 py-3 bg-green-500 hover:bg-green-600 text-white font-semibold rounded-full shadow-md transition"

@@ -1,3 +1,6 @@
+import ProgressAndEvaluation from "./ProgressAndEvaluation";
+import SubjectsGrid from "./SubjectsGrid";
+
 export default function WhyKiddyLearno() {
   return (
     <section className="py-20 bg-gradient-to-b from-yellow-50 to-white">
@@ -7,11 +10,11 @@ export default function WhyKiddyLearno() {
         </h2>
 
         <p className="text-lg text-sky-600 max-w-3xl mx-auto mb-10">
-          Unlike generic tutoring platforms, <strong>KiddyLearno</strong> is
-          lovingly designed *just for kids in Grades 1–8*. We mix playful learning,
+          Unlike generic tutoring platforms, <strong className="text-2xl"><span className="text-orange-500">K</span>L</strong> is
+          lovingly designed *just for kids in KS1 to KS3(Grade 1 to 8)*. We mix playful learning,
           hand-picked tutors, and affordable pricing to make education both fun and effective.
         </p>
-
+<ProgressAndEvaluation/>
         <div className="grid md:grid-cols-3 gap-8 text-left">
           <div className="bg-white rounded-2xl shadow-md p-6 hover:shadow-xl transition">
             <h3 className="text-xl font-bold text-orange-500 mb-2">🎨 Made Just for Kids</h3>

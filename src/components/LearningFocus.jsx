@@ -5,6 +5,7 @@ import {
   ScrollText,
   Calculator,
   Puzzle,
+  BookIcon
 } from 'lucide-react'
 
 import { GiBrain } from 'react-icons/gi'
@@ -39,6 +40,10 @@ export default function LearningFocus() {
               <li className="flex items-center gap-2">
                 <MdScience className="w-5 h-5 text-orange-400" />
                 <span>Science</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <BookIcon className="w-5 h-5 text-orange-400" />
+                <span>More KS2 and KS3 Subjects</span>
               </li>
             </ul>
           </div>

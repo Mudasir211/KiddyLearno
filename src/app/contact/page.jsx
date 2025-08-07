@@ -25,7 +25,7 @@ export default function ContactPage() {
 
             {/* WhatsApp CTA */}
             <a
-              href="https://wa.me/15551234567"
+              href="https://wa.me/+923705100729"
               target="_blank"
               rel="noopener noreferrer"
               className="flex justify-center items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full font-semibold transition shadow-lg mt-6"

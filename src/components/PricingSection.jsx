@@ -11,7 +11,7 @@ export default function PricingSection() {
           Affordable Monthly Packages
         </h2>
         <p className=" text-sky-600 mb-10">
-          Tailored to support your child’s learning journey — from Grade 1 to 8.
+          Tailored to support your child’s learning journey — from KS1 to KS3(Grade 1 to 8).
         </p>
 
         {/* Info card */}
