@@ -2,14 +2,9 @@ import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
 import Navbar from "@/components/NavBar";
 import Footer from "@/components/Footer";
-import { Poppins } from "next/font/google";
 
 // Google Font
-const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-poppins",
-});
+
 
 // Page Metadata
 export const metadata = {
@@ -24,7 +19,7 @@ export const metadata = {
 // Layout Component
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={poppins.variable}>
+    <html lang="en" >
       <body>
         <ClerkProvider>
           <main className="overflow-hidden">
