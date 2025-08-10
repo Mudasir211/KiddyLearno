@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { BadgeCheck,DollarSign, CalendarCheck, PiggyBank, Sparkles } from 'lucide-react'
 import Banner from '../../assets/Banner-pricing.png'
 import Image from 'next/image'
+import { FaWhatsapp } from 'react-icons/fa'
 
 export default function PricingPage() {
   return (
@@ -16,7 +17,7 @@ export default function PricingPage() {
             className="lg:h-[35rem]"
             priority
           /></div>
-      <section className=" bg-[#f7a03cea] px-6 py-10 text-center mb-16">
+      <section className=" rounded-b-2xl bg-[#f7a03cea] px-6 py-10 text-center mb-16">
 
         <p className="text-lg font-semibold text-white">
           Choose a plan that suits your child's schedule and goals. All sessions are live, 1-on-1, and guided by expert tutors.
@@ -88,6 +89,30 @@ export default function PricingPage() {
           </Link>
         </p>
       </div>
+      <div className="py-12 text-center">
+          <p className="text-sky-600 text-base font-medium mb-8">
+            Ready to give your child the learning experience they deserve?
+          </p>
+          <Link
+            href="/book-trial"
+            className="inline-block bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 py-3 rounded-full shadow-md transition"
+          >
+            Book a Free Trial
+          </Link>
+        </div>
+      
+       <div className="border-t py-5 mt-6 text-center">
+                <p className="text-sm text-gray-600 mb-2">Prefer to contact us directly?</p>
+                <a
+                  href="https://wa.me/+923705100729"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center px-6 py-3 text-white bg-green-500 rounded-xl hover:bg-green-600 transition-all duration-200"
+                >
+                  <FaWhatsapp className="mr-2 text-lg" />
+                  Message Us on WhatsApp
+                </a>
+              </div>
     </main>
   )
 }

@@ -20,7 +20,7 @@ export default function Navbar() {
           <Link href="/pricing">Pricing</Link>
           <Link href="/contact">Contact</Link>
         </div>
-        <div className='flex gap-4'><SignedOut> <SignInButton  className='rounded-3xl bg-[#00e4d8] font-semibold p-1.5 px-4'>SignUp</SignInButton></SignedOut> <SignedIn><UserButton/></SignedIn>
+        <div className='flex gap-4'><SignedOut> <Link href={'/sign-in'}  className='rounded-3xl bg-[#00e4d8] font-semibold p-1.5 px-4'>SignUp</Link></SignedOut> <SignedIn><UserButton /></SignedIn>
 
         
        <Menu/></div>

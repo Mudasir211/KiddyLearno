@@ -18,7 +18,7 @@ export default function HeroBanner() {
           <h1 className="text-3xl  sm:text-2xl font-extrabold text-sky-700 leading-tight">
             Unlock Your Child’s <span className="text-orange-500">Potential</span>
           </h1>
-          <p className="text-sm  px-4 text-sky-700 font-semibold">
+          <p className="text-sm lg:text-lg px-4 text-sky-700 font-semibold">
            KiddyLearno is a playful, safe online learning platform for kids in *KS1 to KS3(Grade 1 to 8)*. It focuses on core academic support, homework help, and test preparation in a fun, engaging way designed for young learners.
 
           </p>

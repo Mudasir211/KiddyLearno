@@ -13,7 +13,7 @@ import React from 'react'
 
 function Home() {
   return (
-    <div className='flex gap-10 flex-col'>
+    <div className='flex  flex-col'>
       
       <HeroBanner/>
      <SubjectsGrid/>

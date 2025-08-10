@@ -1,11 +1,21 @@
+
 import EmailRequestForm from '@/components/EmailRequestForm'
+
 import { Mail, Phone, MapPin, Clock, SendHorizonal } from 'lucide-react'
+
+
 import { FaWhatsapp } from 'react-icons/fa'
 
 export default function ContactPage() {
+     
+    
+ 
+
+
   return (
-    <section className="bg-gradient-to-b from-sky-50 via-white to-orange-50  ">
-      <div className="max-w-6xl mx-auto rounded-3xl overflow-hidden shadow-xl bg-white px-5 p-10 md:p-16">
+    <section className="bg-gradient-to-b  from-sky-50 via-white to-orange-50  ">
+      
+      <div className="max-w-6xl mx-auto flex flex-col items-center rounded-3xl overflow-hidden shadow-xl bg-white px-5 p-10 md:p-16">
         {/* Heading */}
         <div className="text-center mb-14">
           <h1 className="text-3xl font-extrabold text-sky-700 mb-3">Let’s Talk!</h1>
@@ -15,11 +25,11 @@ export default function ContactPage() {
         </div>
 
         {/* Grid layout */}
-        <div className="grid md:grid-cols-2 gap-12">
+        <div className="flex flex-col gap-12">
           {/* Contact Info */}
           <div className="space-y-6">
-            <ContactInfo icon={<Mail className="text-orange-500 w-6 h-6" />} label="Email" value="hello@kiddylearno.com" />
-            <ContactInfo icon={<Phone className="text-orange-500 w-6 h-6" />} label="Phone / WhatsApp" value="+1 (555) 123-4567" />
+            <ContactInfo icon={<Mail className="text-orange-500 w-6 h-6" />} label="Email" value="kiddylearno@gmail.com" />
+            <ContactInfo icon={<Phone className="text-orange-500 w-6 h-6" />} label="Phone / WhatsApp" value="+923705100729" />
             <ContactInfo icon={<MapPin className="text-orange-500 w-6 h-6" />} label="Location" value="Online – Global Access 🌍" />
             <ContactInfo icon={<Clock className="text-orange-500 w-6 h-6" />} label="Working Hours" value="Mon – Sat: 9AM – 7PM" />
 
@@ -34,20 +44,8 @@ export default function ContactPage() {
             </a>
           </div>
 
-          {/* Contact Form (No logic) */}
-          <form className="bg-sky-50  p-8 rounded-2xl shadow-md space-y-6 border border-sky-100">
-            <Input label="Your Name" type="text" />
-            <Input label="Email Address" type="email" />
-            <TextArea label="Message" />
-
-            <button
-              type="submit"
-              className="w-full bg-[#00ccff] hover:bg-[#00eeff] text-white px-6 py-3 rounded-full font-semibold flex justify-center items-center gap-2 transition"
-            >
-              <SendHorizonal className="w-4 h-4" />
-              Send Message
-            </button>
-          </form>
+        
+       
         </div>
       </div>
       <EmailRequestForm/>

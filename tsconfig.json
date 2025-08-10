@@ -27,6 +27,6 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-, "src/app/sign-in/[[...sign-in]]/page.jsx", "src/app/layout.jsx"  ],
+, "src/app/sign-in/[[...sign-in]]/page.jsx", "src/app/api/book-trial/route.js"  ],
   "exclude": ["node_modules"]
 }

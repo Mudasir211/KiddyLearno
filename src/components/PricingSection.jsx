@@ -1,8 +1,9 @@
 import { ShieldCheck, Mail } from 'lucide-react'
+import Link from 'next/link'
 
 export default function PricingSection() {
   return (
-    <section className="py-10 bg-gradient-to-br from-yellow-100 via-white to-orange-50 relative overflow-hidden">
+    <section className="py-16 bg-gradient-to-br from-yellow-100 via-white to-orange-50 relative overflow-hidden">
       <div className="absolute -top-20 -left-10 w-72 h-72 bg-orange-100 rounded-full opacity-30 blur-3xl z-0" />
       <div className="absolute bottom-0 right-0 w-64 h-64 bg-sky-100 rounded-full opacity-30 blur-2xl z-0" />
 
@@ -20,9 +21,9 @@ export default function PricingSection() {
             <div className="flex items-center gap-2 text-base font-medium">
               <Mail className="w-5 h-5 text-sky-500" />
               <span>
-                <a href="/contact" className="underline hover:text-sky-800 transition">
+                <Link href="/contact" className="underline hover:text-sky-800 transition">
                   Contact us
-                </a>{' '}
+                </Link>{' '}
                 for personalized pricing details
               </span>
             </div>
@@ -33,13 +34,18 @@ export default function PricingSection() {
             </div>
           </div>
         </div>
-
-        <a
+<Link
+          href="/pricing"
+          className="inline-block bg-blue-500 mb-3 hover:bg-orange-600 text-white text-base font-semibold px-7 py-3 rounded-full shadow-md transition-all hover:scale-105"
+        >
+          Checkout Our Pricing Plans 
+        </Link>
+       <br /> <Link
           href="/contact"
           className="inline-block bg-orange-500 hover:bg-orange-600 text-white text-base font-semibold px-7 py-3 rounded-full shadow-md transition-all hover:scale-105"
         >
           Get in Touch
-        </a>
+        </Link>
       </div>
     </section>
   )

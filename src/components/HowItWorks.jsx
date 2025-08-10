@@ -5,7 +5,7 @@ import { Sparkles, BookOpen, CheckCircle } from 'lucide-react'
 
 export default function HowItWorks() {
   return (
-    <section className="py-9 bg-yellow-50">
+    <section className="py-16 bg-yellow-50">
       <div className="max-w-7xl mx-auto px-6 text-center">
         <h2 className="text-3xl font-bold text-sky-700 mb-9">How It Works</h2>
 

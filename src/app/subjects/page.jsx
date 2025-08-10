@@ -14,6 +14,8 @@ import {
 } from 'lucide-react'
 import Image from 'next/image'
 import Banner from '../../assets/Subjects-Banner.png'
+import Link from 'next/link'
+import { FaWhatsapp } from 'react-icons/fa'
 
 export default function SubjectsPage() {
   return (
@@ -23,7 +25,7 @@ export default function SubjectsPage() {
       </h1>
       <Image src={Banner} alt="Subjects banner" className="w-full" />
       
-      <section className="py-10 px-6 bg-[#f3eed2] space-y-16">
+      <section className="py-10 md:px-20 px-6 bg-[#f3eed2] space-y-16">
 
         {/* Intro */}
         <div className="text-center max-w-3xl mx-auto">
@@ -128,13 +130,25 @@ export default function SubjectsPage() {
           <p className="text-sky-600 mb-6">
             Book a free trial session and see how KiddyLearno makes a difference for your child.
           </p>
-          <a
+          <Link
             href="/book-trial"
             className="inline-block bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-full font-semibold transition shadow-md"
           >
             Book a Free Trial
-          </a>
+          </Link>
         </div>
+        <div className="border-t mt-6 pt-6 text-center">
+                  <p className="text-sm text-gray-600 mb-2">Prefer to contact us directly?</p>
+                  <a
+                    href="https://wa.me/+923705100729"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center px-6 py-3 text-white bg-green-500 rounded-xl hover:bg-green-600 transition-all duration-200"
+                  >
+                    <FaWhatsapp className="mr-2 text-lg" />
+                    Message Us on WhatsApp
+                  </a>
+                </div>
       </section>
     </>
   )

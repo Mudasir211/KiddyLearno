@@ -1,9 +1,10 @@
+import Link from "next/link";
 import ProgressAndEvaluation from "./ProgressAndEvaluation";
 import SubjectsGrid from "./SubjectsGrid";
 
 export default function WhyKiddyLearno() {
   return (
-    <section className="py-20 bg-gradient-to-b from-yellow-50 to-white">
+    <section className="py-24 bg-gradient-to-b from-yellow-50 to-white">
       <div className="max-w-5xl mx-auto px-6 text-center">
         <h2 className="text-3xl md:text-5xl font-extrabold text-sky-700 mb-6">
           Why Choose <span className="text-orange-500">KiddyLearno?</span>
@@ -45,13 +46,13 @@ export default function WhyKiddyLearno() {
           <p className="text-sky-600 text-base font-medium mb-4">
             Ready to give your child the learning experience they deserve?
           </p>
-          <a
+          <Link
             href="/contact"
             className="inline-block bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 py-3 rounded-full shadow-md transition"
           >
             Book a Free Trial
-          </a>
-        </div>
+          </Link>
+        </div><br />
       </div>
     </section>
   )

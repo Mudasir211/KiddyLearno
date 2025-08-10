@@ -2,17 +2,35 @@
 
 import { useState } from 'react'
 import { MailCheck } from 'lucide-react'
+import toast from 'react-hot-toast'
 
 export default function EmailRequestForm() {
   const [email, setEmail] = useState('')
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    // Logic removed – just preventing default form submission for now
+const handleSubmit = async (e) => {
+  e.preventDefault()
+
+  try {
+    const res = await fetch('/api/send-info', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email }),
+    })
+
+    if (res.ok) {
+      toast.success('Details sent to your inbox!')
+      setEmail('')
+    } else {
+      toast.error('Something went wrong. Please try again.')
+    }
+  } catch (error) {
+    toast.error('Error sending email.')
+    console.error(error)
   }
+}
 
   return (
-    <section className="py-16 bg-sky-50">
+    <section className="py-20 bg-sky-50">
       <div className="max-w-xl mx-auto px-6 text-center">
         <h2 className="text-3xl md:text-4xl font-extrabold text-sky-700 mb-4">
           Want Full Details in Your Inbox?

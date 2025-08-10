@@ -13,7 +13,7 @@ const subjects = [
 
 export default function SubjectsGrid() {
   return (
-    <section className="py-16 px-8 bg-sky-50">
+    <section className="py-24 px-8 bg-sky-50">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-3xl font-bold text-sky-700 mb-8">Tutoring Services Provided</h2>
         <p className="text-sky-600 mb-12 max-w-2xl mx-auto">
