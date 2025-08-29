@@ -13,12 +13,8 @@
     }
   ],
   "env": {
-    "NEXT_PUBLIC_API_URL": "https://api.example.com",
-    
+    "NEXT_PUBLIC_API_URL": "https://api.example.com"
   },
-  
-  "alias": "kiddy-learno.vercel.app",
-
   "build": {
     "env": {
       "SECRET_KEY": "@secret-key"
