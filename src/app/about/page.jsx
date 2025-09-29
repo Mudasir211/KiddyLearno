@@ -6,6 +6,57 @@ import ContactOptions from "@/components/ContactOptions";
 import SubjectsGrid from "@/components/SubjectsGrid";
 import ProgressAndEvaluation from "@/components/ProgressAndEvaluation";
 import Link from "next/link";
+
+
+
+
+export const metadata = {
+  title: "About Us | KiddyLearno - Online Tutoring for Kids (Grades 1–8)",
+  description:
+    "Learn more about KiddyLearno – an engaging online tutoring platform for Grades 1–8 (KS1 to KS3). Discover our mission, vision, teaching philosophy, and why families trust us to make learning fun, affordable, and effective.",
+  keywords: [
+    "about KiddyLearno",
+    "online tutoring for kids",
+    "KS1 tutoring",
+    "KS2 tutoring",
+    "KS3 tutoring",
+    "affordable tutoring",
+    "online learning platform",
+    "math tutor online",
+    "english tutor online",
+    "science tutor online",
+  ],
+  openGraph: {
+    title: "About Us | KiddyLearno - Fun & Effective Online Tutoring",
+    description:
+      "Discover the mission, vision, and teaching philosophy behind KiddyLearno – trusted online tutoring for Grades 1–8. Kid-focused, affordable, and engaging lessons.",
+    url: "https://kiddylearno.online/about",
+    siteName: "KiddyLearno",
+    images: [
+      {
+        url: "https://kiddylearno.online/Logo.png",
+        width: 600,
+        height: 600,
+        alt: "KiddyLearno Logo",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Us | KiddyLearno - Online Tutoring for Kids",
+    description:
+      "Get to know KiddyLearno – playful and effective tutoring for Grades 1–8. Learn how we empower kids with confidence and joy in learning.",
+    images: ["https://kiddylearno.online/Logo.png"],
+  },
+  icons: {
+    icon: "/favicon.ico?v=2",
+   
+  },
+  metadataBase: new URL("https://kiddylearno.online"),
+};
+
 export default function AboutPage() {
   return (
     <main className="bg-white flex  flex-col text-sky-800">

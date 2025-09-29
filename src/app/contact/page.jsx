@@ -6,6 +6,54 @@ import { Mail, Phone, MapPin, Clock, SendHorizonal } from 'lucide-react'
 
 import { FaWhatsapp } from 'react-icons/fa'
 
+
+export const metadata = {
+  title: "Contact Us | KiddyLearno - Online Tutoring for Kids (Grades 1–8)",
+  description:
+    "Get in touch with KiddyLearno! Have questions about enrollment or tutoring? Contact us via email, phone, or WhatsApp. We’re here to support parents and students worldwide.",
+  keywords: [
+    "KiddyLearno contact",
+    "contact KiddyLearno",
+    "online tutoring contact",
+    "tutoring support",
+    "kids tutoring help",
+    "math tutor contact",
+    "english tutor contact",
+    "science tutor contact",
+    "affordable online tutoring",
+  ],
+  openGraph: {
+    title: "Contact Us | KiddyLearno - Online Tutoring for Kids",
+    description:
+      "Reach out to KiddyLearno for questions, enrollment, or support. We’re available by email, phone, and WhatsApp for parents and students worldwide.",
+    url: "https://kiddylearno.online/contact",
+    siteName: "KiddyLearno",
+    images: [
+      {
+        url: "https://kiddylearno.online/Logo.png",
+        width: 600,
+        height: 600,
+        alt: "KiddyLearno Logo",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact Us | KiddyLearno",
+    description:
+      "Got questions about tutoring for Grades 1–8? Contact KiddyLearno via email, phone, or WhatsApp. We’re here to help your child succeed!",
+    images: ["https://kiddylearno.online/Logo.png"],
+  },
+  icons: {
+    icon: "/favicon.ico?v=2",
+    
+  },
+  metadataBase: new URL("https://kiddylearno.online"),
+};
+
+
 export default function ContactPage() {
      
     

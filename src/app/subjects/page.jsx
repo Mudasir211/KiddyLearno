@@ -17,6 +17,58 @@ import Banner from '../../assets/Subjects-Banner.png'
 import Link from 'next/link'
 import { FaWhatsapp } from 'react-icons/fa'
 
+
+export const metadata = {
+  title: "Subjects & Tutoring Services | KiddyLearno",
+  description:
+    "Explore KiddyLearno’s online tutoring services for KS1 to KS3 (Grades 1–8). Expert support in Maths, English, Science, skill development, and test preparation like NAPLAN and SATs. Fun, engaging, and tailored learning programs.",
+  keywords: [
+    "KiddyLearno subjects",
+    "online tutoring services",
+    "math tutor grade 1 to 8",
+    "english tutoring kids",
+    "science tutoring online",
+    "KS1 tutoring",
+    "KS2 tutoring",
+    "KS3 tutoring",
+    "test prep tutoring",
+    "skill development tutoring",
+    "NAPLAN preparation",
+    "SATs tutoring UK",
+  ],
+  openGraph: {
+    title: "Subjects & Tutoring Services | KiddyLearno",
+    description:
+      "KiddyLearno offers 1-on-1 online tutoring for core subjects, skill development, and test prep. Covering Maths, English, Science, and more for Grades 1–8 (KS1–KS3).",
+    url: "https://kiddylearno.online/subjects",
+    siteName: "KiddyLearno",
+    images: [
+      {
+        url: "https://kiddylearno.online/Logo.png",
+        width: 1200,
+        height: 630,
+        alt: "KiddyLearno Subjects and Tutoring Banner",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Subjects & Tutoring Services | KiddyLearno",
+    description:
+      "Online tutoring for Grades 1–8 in Maths, English, Science, skills, and test prep (NAPLAN, SATs). Tailored learning to boost confidence and academic success.",
+    images: ["https://kiddylearno.online/Logo.png"],
+  },
+  icons: {
+    icon: "/favicon.ico?v=2",
+    
+  },
+  metadataBase: new URL("https://kiddylearno.online"),
+};
+
+
+
 export default function SubjectsPage() {
   return (
     <>

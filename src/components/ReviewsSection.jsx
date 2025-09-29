@@ -1,4 +1,5 @@
 // components/ReviewsSection.js
+"use client";
 import { useState } from "react";
 import { FaStar } from "react-icons/fa";
 

@@ -5,6 +5,54 @@ import Banner from '../../assets/Banner-pricing.png'
 import Image from 'next/image'
 import { FaWhatsapp } from 'react-icons/fa'
 
+
+export const metadata = {
+  title: "Affordable Online Tutoring Plans | KiddyLearno",
+  description:
+    "Discover flexible and affordable online tutoring plans at KiddyLearno. Choose from Standard, Extended, or Custom plans designed for Grades 1–8 with 1-on-1 live tutoring, progress tracking, and curriculum coverage.",
+  keywords: [
+    "KiddyLearno pricing",
+    "online tutoring plans",
+    "affordable tutoring",
+    "tutoring fees kids",
+    "math tutor cost",
+    "english tutor pricing",
+    "science tutoring rates",
+    "custom tutoring plan",
+    "1-on-1 tutoring online",
+  ],
+  openGraph: {
+    title: "Flexible & Affordable Tutoring Plans | KiddyLearno",
+    description:
+      "Flexible and affordable tutoring for kids in Grades 1–8. Explore our Standard, Extended, or Custom plans tailored to your child’s learning goals.",
+    url: "https://kiddylearno.online/pricing",
+    siteName: "KiddyLearno",
+    images: [
+      {
+        url: "https://kiddylearno.online/Logo.png",
+        width: 1200,
+        height: 630,
+        alt: "KiddyLearno Tutoring Plans Banner",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Affordable Tutoring Plans | KiddyLearno",
+    description:
+      "Choose a flexible tutoring plan that fits your child’s needs. Standard, Extended, and Custom tutoring options available at affordable rates.",
+    images: ["https://kiddylearno.online/Logo.png"],
+  },
+  icons: {
+    icon: "/favicon.ico?v=2",
+   
+  },
+  metadataBase: new URL("https://kiddylearno.online"),
+};
+
+
 export default function PricingPage() {
   return (
     <main className="bg-sky-50 pb-8  ">
