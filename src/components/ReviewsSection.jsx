@@ -8,19 +8,19 @@ const reviews = [
     name: "Gunjan",
     role: "Parent",
     text: "We’ve been taking online tuition here with Miss Sannia for over 3 years now for both Math and English, and the experience has been excellent. She has a very positive attitude, is flexible with scheduling, and always provides regular updates on progress. She also has a clear understanding of the Australian curriculum and ensures her teaching follows it closely. My son really enjoys her classes as she is friendly, approachable, and makes learning engaging. I truly appreciate her dedication and highly recommend this platform to anyone looking for a supportive and effective tutor.",
-    image: "https://randomuser.me/api/portraits/women/65.jpg", // female profile
+    image: "/Gunjal.jpeg", // female profile
     rating: 5,
   },
   {
     name: "Aman Sandhar",
     role: "Student",
     text: "I enrolled here for getting help with Science, and my teacher is very knowledgeable, patient, and always explains things clearly. She has helped me gain confidence in exams and achieve good results. Highly recommend.",
-    image: "https://randomuser.me/api/portraits/men/76.jpg",
+    image: "/Aman.jpeg",
     rating: 5,
   },
   {
     name: "Ashwat",
-    role: "Year 12 Student",
+    role: "Student",
     text: "Kiddy Learno has been one of the best decisions I have made with my academic learning. I’m a student currently in year 12 and have been tutored by this organisation for many years. I’ve improved my mathematics, chemistry and biology all because of the aid of Kiddy Learno. I recommend this organisation for anybody attempting to hone their potential and capabilities intellectually.",
     image: "https://randomuser.me/api/portraits/men/85.jpg",
     rating: 5,
