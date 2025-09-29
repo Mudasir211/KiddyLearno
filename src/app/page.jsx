@@ -21,10 +21,11 @@ function Home() {
       
       <HowItWorks/>
       <PricingSection/>
+      <ReviewsSection/>
       <ContactOptions/>
       <EmailRequestForm/>
       <WhyKiddyLearno/>
-      <ReviewsSection/>
+      
     </div>
   )
 }
